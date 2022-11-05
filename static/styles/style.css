@@ -32,11 +32,17 @@ body{
 
 .container{
     height: 1000px;
+    margin-top: 10px; /* Free space between the top bar and the first h1 title */ 
+}
+
+.centered-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
 }
 
 
 /*-------- SIM CARDS --------*/
-
 .list-of-sim{
     display: flex;
     flex-direction: column;
@@ -70,10 +76,4 @@ body{
     background-repeat: no-repeat;
 }
 
-
-.centered-button{
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-}
 
