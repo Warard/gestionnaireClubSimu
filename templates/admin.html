@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% block title %}Administration{% endblock %}
+
+{% block content %}
+
+    <h1>Administration</h1>
+    <p>Cette page sera reservée aux administrateurs</p><br>
+
+    <h2>Suivi de navigabilité</h2><br>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Nom simu</th>
+                <th scope="col">Heures accumulée</th>
+                <th scope="col">Heures restantes</th>
+                <th scope="col">Prochaine opération maintenance</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Simu 1</td>
+                <td>7h</td>
+                <td>13h</td>
+                <td>Vérification générale</td>
+                <td>
+                    <button type="button" class="btn btn-warning">Modifier</button>
+                </td>
+            <tr>
+
+            <tr>
+                <td>Simu 2</td>
+                <td>3h</td>
+                <td>17h</td>
+                <td>Mise à jour P3D</td>
+                <td>
+                    <button type="button" class="btn btn-warning">Modifier</button>
+                </td>
+            <tr>
+
+            <tr>
+                <td>Simu 3</td>
+                <td>11h</td>
+                <td>9h</td>
+                <td>Vérification générale</td>
+                <td>
+                    <button type="button" class="btn btn-warning">Modifier</button>
+                </td>
+            <tr>
+        </tbody>
+    </table>
+
+
+    <h2>Liste des membres</h2><br>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Nom</th>
+                <th scope="col">Prénom</th>
+                <th scope="col">Pseudo</th>
+                <th scope="col">Mail</th>
+                <th scope="col">Grade</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Guynemer</td>
+                <td>Georges</td>
+                <td>jojoPilote</td>
+                <td>geo.Guynemer@cigognes.fr</td>
+                <td>Eleve simu 2</td>
+                <td>
+                    <button type="button" class="btn btn-warning">Modifier</button>
+                    <button type="button" class="btn btn-danger">Supprimer</button>
+                </td>
+            <tr>
+
+            <tr>
+                <tr>
+                <td>Latécoère</td>
+                <td>Pierre</td>
+                <td>cocoPierro</td>
+                <td>pierre.latecoere@gmail.com</td>
+                <td>Lâché simu 1</td>
+                <td>
+                    <button type="button" class="btn btn-warning">Modifier</button>
+                    <button type="button" class="btn btn-danger">Supprimer</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Mermoz</td>
+                <td>Jean</td>
+                <td>Momo</td>
+                <td>jean.mermoz@yahoo.fr</td>
+                <td>Instructeur simu 2</td>
+                <td>
+                    <button type="button" class="btn btn-warning">Modifier</button>
+                    <button type="button" class="btn btn-danger">Supprimer</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}
